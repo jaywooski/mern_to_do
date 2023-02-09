@@ -17,7 +17,8 @@
 .env.development.local
 .env.test.local
 .env.production.local
-.env
+.env 
+# Wanting to see if this does anything
 
 npm-debug.log*
 yarn-debug.log*
