@@ -5,6 +5,8 @@ const ToDoSchema = new Schema({
     text: {
         type: String,
         required: true
+        // implement a validator so the 
+        // text won't be blank and draw an error
     },
     complete: {
         type: Boolean,

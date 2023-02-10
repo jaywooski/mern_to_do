@@ -10,7 +10,7 @@ app.use(cors());
 
 mongoose.connect(process.env.ATLAS_DB, {
     useNewUrlParser: true,
-    useunifiedTopology: true
+    useUnifiedTopology: true
 })
     .then(() => console.log('Connected to database!'))
     .catch(console.error);
