@@ -4,7 +4,8 @@ const Schema = mongoose.Schema;
 const ToDoSchema = new Schema({
     text: {
         type: String,
-        required: true
+        required: true,
+        minLength: [1, 'Please enter a valid task']
         // implement a validator so the 
         // text won't be blank and draw an error
     },

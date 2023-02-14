@@ -27,8 +27,9 @@ app.post('/todo/new', (req, res)=>{
     const todo = new Todo({
         text: req.body.text
     })
-
-    todo.save();
+    if(todo.text.length > 1) {
+        todo.save();
+    }
 
     res.json(todo);
 })
